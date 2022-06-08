@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+  <meta charset="utf-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <section class="banner" id="sec">
+    <header>
+      <a href="#" class="logo">Home</a>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <h2>Welcome To Website,<br>Saya <span>Muhammad Rizky Ramadhan</span></h2>
+      <p>Saya berasal dari kota medan dan tahun ini akan berumur 20 tahun, makanan kesukaan saya adalah
+      nasi goreng dan saya senang untuk belajar website</p>
+      <a href="#">Ketahui Lebih Lanjut</a>
+    </div>
+  </section>
+  <div id="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portofolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="https://api.whatsapp.com/send/?phone=%2B6285969077055&text&app_absent=0">Contact</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
